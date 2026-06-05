@@ -1,0 +1,82 @@
+.trip-form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.form-header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.form-header h2 { font-size: 18px; font-weight: 700; }
+.form-header p { color: var(--text2); font-size: 13px; margin-top: 2px; }
+
+.quick-examples {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+}
+.examples-label { font-size: 12px; color: var(--text2); }
+.example-btn {
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text2); font-size: 11px; padding: 4px 10px;
+  border-radius: 20px; transition: all 0.2s;
+}
+.example-btn:hover { border-color: var(--accent); color: var(--accent2); }
+
+.form-body { padding: 20px; display: flex; flex-direction: column; gap: 18px; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--text2);
+}
+.label-icon { font-size: 14px; }
+.label-hint {
+  margin-left: auto; font-size: 11px; color: var(--text2);
+  background: var(--surface2); padding: 2px 8px; border-radius: 10px;
+  font-weight: 400;
+}
+.form-group input {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 14px;
+  color: var(--text); font-size: 14px;
+  transition: border-color 0.2s; outline: none;
+}
+.form-group input:focus { border-color: var(--accent); }
+.form-group input::placeholder { color: var(--text2); }
+
+.route-connector { display: flex; flex-direction: column; gap: 0; }
+.connector-line {
+  display: flex; align-items: center; padding: 4px 0 4px 16px;
+}
+.connector-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); flex-shrink: 0; }
+.connector-track { width: 2px; height: 24px; background: var(--border); margin: 2px 3px; }
+
+.cycle-bar-wrap { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.cycle-bar { flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.cycle-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.cycle-label { font-size: 12px; font-weight: 600; white-space: nowrap; }
+
+.hos-rules {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px;
+}
+.rules-title { font-size: 12px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+.rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.rule-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text2); }
+
+.submit-btn {
+  width: 100%; padding: 14px;
+  background: var(--accent); border: none; border-radius: 10px;
+  color: white; font-size: 15px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all 0.2s;
+}
+.submit-btn:hover:not(:disabled) { background: var(--accent2); transform: translateY(-1px); box-shadow: 0 4px 20px rgba(79,110,247,0.4); }
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white; border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}

@@ -1,0 +1,19 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #222638;
+  --border: #2e3248;
+  --accent: #4f6ef7;
+  --accent2: #6c8cff;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --text: #e8eaf6;
+  --text2: #9095b0;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+button { cursor: pointer; font-family: inherit; }
+input { font-family: inherit; }
